@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>米开朗基罗的工坊 · 大理石雕刻</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <canvas id="view" aria-label="雕刻工作区"></canvas>
+
+  <aside id="toolbar" class="panel" aria-label="工具"></aside>
+
+  <section id="stats" class="panel" aria-live="polite"></section>
+
+  <aside id="draft" class="panel" aria-label="草稿">
+    <h2 id="draft-title"></h2>
+    <p id="draft-meta"></p>
+    <canvas id="sketch" width="320" height="300" aria-label="雕塑草稿图"></canvas>
+    <p id="draft-tip"></p>
+  </aside>
+
+  <div id="toast" role="status" aria-live="assertive"></div>
+
+  <div id="overlay" hidden>
+    <div id="modal" class="panel" role="dialog" aria-modal="true"></div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
